@@ -39,9 +39,9 @@ lazy val jarLinker = (project in file("jarLinker"))
     exportJars        := true,
     publishMavenStyle := true,
 
-    packageBin in Compile := baseDirectory.value / "",
-    packageDoc in Compile := baseDirectory.value / "",
-    packageSrc in Compile := baseDirectory.value / ""
+    packageBin in Compile := baseDirectory.value / "externaljarmaker_2.11-0.0.1.jar",
+    packageDoc in Compile := baseDirectory.value / "externaljarmaker_2.11-0.0.1-javadoc.jar",
+    packageSrc in Compile := baseDirectory.value / "externaljarmaker_2.11-0.0.1-sources.jar"
   )
 
 
